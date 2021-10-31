@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background: url(./assets/pintura.jpg) no-repeat center top ;
+    background-size: cover;
+    font-family: 'Bebas Neue', cursive;
+    height: 100vh;
+    
+}
+
+.login-box{
+    width: 320px;
+    height: 420px;
+    background:rgba(141, 160, 139, 0.6);
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 20px;
+}
+
+.login-box .avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 30px 10px;
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    background-color: rgba(204, 226, 202, 0.7);
+}
+
+.login-box .avatar:hover {
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+
+.login-box h3{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"]{
+    border: none;
+    text-align: center;
+    border-bottom: 1px solid rgba(22, 40, 21, 1);
+    background:transparent;
+    outline:none;
+    height: 40px;
+    color: rgb(177, 177, 177);
+    font-size: 16px;
+    font-family: 'BenchNine';
+}
+
+.login-box input[type="submit"] 
+    {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(22, 40, 21, 1) ;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 0.9em;
+    line-height: 20px;
+    color: rgba(22, 40, 21, 1);
+}
+
+.login-box a:hover{
+    color: #fff;
+}
+
+.buton:hover {
+    transform: scale(1.1);
+    transition: 1.1s;
+    background-color: rgba(204, 226, 202);
+}
+
