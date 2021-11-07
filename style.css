@@ -33,12 +33,13 @@ body {
   padding: 0.1%;
   list-style: none;
   cursor: pointer;
+  padding-left: 3%;
 }
 
 .containerTotal nav .contacto .iconSocialMedia li {
   display: inline-block;
   margin: 0% 20%;
-  padding: 3px;
+  padding: 3px 3px 40px 3px;
 }
 
 .containerTotal nav .contacto .iconSocialMedia li:hover {
@@ -53,6 +54,7 @@ body {
   font-size: 1.1em;
   padding: 0.1%;
   list-style: none;
+  padding-right: 3%;
 }
 
 .containerTotal nav .contacto .socialMail li {
@@ -135,6 +137,12 @@ body {
   height: 50%;
 }
 
+@media screen and (max-width: 371px) {
+  .containerTotal main .nosotros img {
+    margin-top: 10%;
+  }
+}
+
 .containerTotal main .nosotros p {
   margin-top: 20%;
   margin-left: 10%;
@@ -142,6 +150,13 @@ body {
   text-shadow: rgba(0, 0, 0, 0.411) 6px 6px 8px;
   font-family: 'BenchNine', sans-serif;
   font-size: 1.7em;
+}
+
+@media screen and (max-width: 1055px) {
+  .containerTotal main .nosotros p {
+    margin-top: 0%;
+    font-size: 1.3em;
+  }
 }
 
 @-webkit-keyframes cuadradoLogo {
@@ -228,6 +243,15 @@ body {
   /* for touch screen devices */
 }
 
+@media screen and (max-width: 311px) {
+  .containerTotal main .portfolio {
+    padding: 0 5%;
+  }
+  .containerTotal main .portfolio .fotosPort {
+    margin: 0 30% 0 15%;
+  }
+}
+
 .containerTotal main .portfolio h2 {
   margin-bottom: .5em;
   font-family: 'Playball', cursive;
@@ -245,6 +269,13 @@ body {
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1em;
   /* hover styles */
+}
+
+@media screen and (max-width: 371px) {
+  .containerTotal main .portfolio .grid-container {
+    margin-left: -10%;
+    margin-right: -10%;
+  }
 }
 
 .containerTotal main .portfolio .grid-container img {
@@ -332,6 +363,13 @@ body {
   font-family: 'Bebas Neue', cursive;
 }
 
+@media screen and (max-width: 769px) {
+  .containerTotal main .registro .registro {
+    margin-left: -15%;
+    margin-right: -15%;
+  }
+}
+
 .containerTotal main .registro h2 {
   text-align: center;
 }
@@ -354,7 +392,7 @@ body {
 
 .containerTotal main .registro .subscribe form {
   padding: 2% 2% 2% 2%;
-  color: #cce2ca;
+  color: #faf9f9;
 }
 
 .containerTotal main .registro .subscribe form .datos {
@@ -399,14 +437,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  width: 20%;
+  width: auto;
   margin: auto;
-  background: #cfc9c9;
+  background: #b3adad;
   cursor: pointer;
   font-size: 24px;
   border: none;
   outline: none;
-  height: 40px;
+  height: auto;
   border-radius: 20px;
 }
 
@@ -420,6 +458,11 @@ body {
 
 .containerTotal main .registro .subscribe form .datos6 {
   padding-left: 0;
+}
+
+.containerTotal main .registro .subscribe form .datos6 textarea {
+  width: 100%;
+  height: 6em;
 }
 
 .containerTotal .footer {
@@ -449,6 +492,12 @@ body {
   height: 100px;
 }
 
+@media screen and (max-width: 311px) {
+  .containerTotal .footer .logoFooter {
+    display: none;
+  }
+}
+
 .containerTotal .footer .firma {
   -ms-flex-line-pack: center;
       align-content: center;
@@ -462,5 +511,64 @@ body {
 .containerTotal .footer .domicilio {
   text-align: center;
   margin-top: 2%;
+}
+
+@media screen and (min-width: 1700px) {
+  .grid-container {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media only screen and (min-width: 1560px) and (max-width: 1699px) {
+  .grid-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1166px) {
+  .servicios {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1166px) and (min-width: 770px) {
+  .grid-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1166px) and (min-width: 770px) {
+  .grid-container {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .servicios {
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-top: 5%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .footer .firma {
+    display: none;
+  }
+  main {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 770px) and (width: 311px) {
+  .grid-container {
+    height: auto;
+    width: auto;
+  }
+  .logoFooter img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
