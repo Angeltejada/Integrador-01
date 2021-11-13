@@ -70,8 +70,14 @@ body {
 .containerTotal nav .navbar {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.233);
+  background-color: rgba(136, 134, 134, 0.11);
   font-family: 'Bebas Neue', cursive;
+}
+
+@media screen and (max-width: 550px) {
+  .containerTotal nav .navbar {
+    background-color: rgba(230, 196, 196, 0.336);
+  }
 }
 
 .containerTotal nav .navbar .logo:hover {
@@ -87,20 +93,82 @@ body {
   max-height: 100%;
 }
 
-.containerTotal nav .navbar .lista li {
+@media screen and (max-width: 550px) {
+  .containerTotal nav .navbar .menu a {
+    text-decoration: none;
+    display: block;
+    padding-left: 35%;
+    text-align: center;
+    max-width: 300px;
+  }
+}
+
+.containerTotal nav .navbar .menu .lista li {
   display: inline;
   padding: 25px 25px;
 }
 
-.containerTotal nav .navbar .lista li:hover {
+.containerTotal nav .navbar .menu .lista li:hover {
   background-color: rgba(7, 5, 5, 0.068);
   border-radius: 25px;
 }
 
-.containerTotal nav .navbar .lista li a {
+.containerTotal nav .navbar .menu .lista li a {
   text-decoration: none;
   color: #4e5d4d;
   font-size: 1.5em;
+}
+
+@media screen and (min-width: 551px) {
+  .containerTotal nav .navbar .menu input[type="checkbox"],
+  .containerTotal nav .navbar .menu .fa-bars,
+  .containerTotal nav .navbar .menu .fa-times {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .containerTotal nav .navbar .menu input[type="checkbox"],
+  .containerTotal nav .navbar .menu .fa-bars,
+  .containerTotal nav .navbar .menu .fa-times {
+    position: absolute;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0%;
+    top: 0;
+    width: 48px;
+    height: 48px;
+  }
+  .containerTotal nav .navbar .menu .fa-bars,
+  .containerTotal nav .navbar .menu .fa-times {
+    font-size: 20px;
+    pointer-events: none;
+  }
+  .containerTotal nav .navbar .menu input[type="checkbox"] {
+    opacity: 0;
+  }
+  .containerTotal nav .navbar .menu {
+    width: 200%;
+    color: #162815;
+    position: relative;
+    border-radius: 15px;
+    background: rgba(163, 159, 159, 0.5);
+    min-height: 20px;
+  }
+  .containerTotal nav .navbar .menu .navi {
+    display: none;
+  }
+  .containerTotal nav .navbar .menu input:checked ~ .navi {
+    display: block;
+  }
+  .containerTotal nav .navbar .menu input:checked ~ .fa-bars {
+    display: none;
+  }
+  .containerTotal nav .navbar .menu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
 }
 
 .containerTotal .portada {
